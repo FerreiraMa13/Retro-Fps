@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HashManager: MonoBehaviour
+public class BaseHashManager: MonoBehaviour
 {
     private void Awake()
     {

@@ -13,6 +13,7 @@ public class BaseGun : MonoBehaviour
     private int clip = 0;
     private float fire_timer = 0.0f;
     private float reload_timer = 0.0f;
+    private int damage = 5;
 
     public int ammoCount = 1;
     public float firing_delay = 0.5f;
@@ -61,6 +62,10 @@ public class BaseGun : MonoBehaviour
     public virtual void TopUpClip()
     {
         clip = ammoCount;
+    }
+    public int GetDamage()
+    {
+        return damage;
     }
 }
 
